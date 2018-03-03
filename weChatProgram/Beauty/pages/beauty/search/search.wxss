@@ -1,0 +1,49 @@
+/* pages/beauty/search/search.wxss */
+@import "/pages/template/question.wxss";
+
+page{
+  background: #f5f5f4;
+}
+
+/* 搜索栏 */
+.search{
+  width: 100%;
+  height: 100rpx;
+  /* text-align: center; */
+  box-sizing: border-box;
+  background: #95dcba;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10rpx;
+  /* position: fixed;
+  top:0;
+  left: 0;
+  z-index: 1; */
+}
+.search-input{
+  width: 85%;
+  /* height: 60rpx; */
+  margin: 0 auto;
+  background: #fff;
+  font-size: 28rpx;
+  color: #999;
+  /* padding: 10rpx 0; */
+  border-radius: 30rpx;
+  display: flex;
+  align-items: center;
+}
+.search-input icon{
+  padding: 0 20rpx;
+}
+.search-input input{
+  height: 100%;
+  width: 100%;
+}
+.search-cancel{
+  width: 10%;
+  font-size: 28rpx;
+  color: #fff;
+  text-align: center;
+  padding: 5rpx 0;
+}

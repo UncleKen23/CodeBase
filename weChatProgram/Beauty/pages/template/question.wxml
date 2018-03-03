@@ -1,0 +1,15 @@
+<template name="question">
+  <view class='question-box'>
+    <view class='question-title'>请问18岁该用什么样的护肤品，之前都是用婴儿 面霜，脸颊上有红血丝，中性皮肤?</view>
+    <view class='question-answer'>有红血丝的话是因为角质层比较薄，所以你 用护肤品的时候就应该选个温和不伤肤的那种， 特别是洗面奶</view>
+    <view class='flex-justify-between' style='margin-top:20rpx;'>
+      <view class='question-left flex-justify-between'>
+        <view class='answerBtn'>回答</view>
+        <view class='comment'>124赞 · 30评论</view>
+      </view>
+      <view class='question-right'>
+        <image src='/pages/images/dot.png' mode='widthFix'></image>
+      </view>
+    </view>
+  </view>
+</template>

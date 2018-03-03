@@ -1,0 +1,72 @@
+/**app.wxss**/
+
+page{
+	height: 100%;
+	color: #333;
+  font-family: "Microsoft YaHei",Verdana,Arial,sans-serif;
+	overflow-x: hidden;
+}
+
+/*文字溢出省略*/
+.one-row-hide {
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+.two-row-hide {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.three-row-hide {
+   display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+/*文字溢出省略 end*/
+
+
+/* 弹性盒子布局 */
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: center;
+}
+/* 中间对齐 */
+.flex-justify-center{
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+}
+/* 两端对齐 */
+.flex-justify-between{
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* end */
+
+/*inpute 默认placeholder样式*/
+.placeHolderStyle {
+  font-size: 25rpx;
+  color: #d1d1d1;
+  font-weight: 600;
+}

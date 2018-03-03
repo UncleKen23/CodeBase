@@ -1,0 +1,44 @@
+.question-box{
+  width: 100%;
+  min-height: 300rpx;
+  padding: 20rpx 30rpx;
+  box-sizing: border-box;
+  background: #fff;
+  margin-top: 20rpx;
+}
+.question-title{
+  font-size: 32rpx;
+  color: #111;
+  font-weight: bold;
+  line-height: 48rpx;
+}
+.question-answer{
+  font-size: 28rpx;
+  color: #696464;
+  line-height: 48rpx;
+  padding-top:20rpx; 
+}
+.question-left .answerBtn{
+  font-size: 20rpx;
+  color: #696464;
+  padding: 5rpx 10rpx;
+  border: 1rpx solid #696464;
+}
+.question-left .comment{
+  font-size: 24rpx;
+  color: #696464;
+  line-height: 48rpx;
+  padding: 0 20rpx;
+}
+.question-right{
+  width: 50rpx;
+  height: 50rpx;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
+.question-right image{
+  width: 33rpx;
+  height: 8rpx;
+}

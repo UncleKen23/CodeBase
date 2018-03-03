@@ -1,0 +1,38 @@
+<!--pages/beauty/beauty.wxml-->
+<import src='../template/question.wxml' />
+
+<view class='search' bindtap='showSearch'>
+  <view class='search-input'>
+    <icon size='13' type='search'></icon>
+    <text>想要问什么问题</text>
+  </view>
+  <view class='search-cancel' wx:if="{{false}}">取消</view>
+</view>
+<view class='banner'>
+  <image class='bg' src='../images/beauty/banner.png' mode='widthFix'></image>
+  <view class='user'>
+    <view class='headPortrait'>
+      <image src='{{userInfo.avatarUrl}}'></image>
+    </view>
+    <view class='name'>{{userInfo.nickName}}</view>
+    <view class='fans'>
+      <view class='fans-li'>
+        <view>0</view>
+        <view>关注</view>
+      </view>
+      <view class='every'></view>
+      <view class='fans-li '>
+        <view>1.2万</view>
+        <view>粉丝</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+
+<!-- 问题来了 -->
+<template is="question" />
+<template is="question" />
+<template is="question" />
+<template is="question" />
