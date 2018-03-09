@@ -1,0 +1,163 @@
+/* pages/beauty/baseContent/quesetionDetail.wxss */
+.question{
+  width: 100%;
+  padding: 20rpx;
+  box-sizing: border-box;
+  font-size: 32rpx;
+  line-height: 48rpx;
+  color: #000;
+  font-weight: bold;
+  border-bottom: 1rpx solid #eeeeee;
+}
+
+.answer{
+  width: 100%;
+  padding: 25rpx 36rpx;
+  font-size: 26rpx;
+}
+.btn{
+  border-radius: 10rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.ansBtn{
+  width: 150rpx;
+  color: #df838e;
+  background: #f7f7f7;
+  padding: 20rpx 0; 
+}
+.ansBtn image{
+  width: 27rpx;
+  height: 30rpx;
+  padding-right: 10rpx;
+}
+.checkAll{
+  display: flex;
+  align-items: center;
+  color: #919191;
+}
+.checkAll image{
+  width: 16rpx;
+  height: 28rpx;
+  padding-left: 60rpx;
+}
+
+/* 线 */
+.every{
+  width: 100%;
+  height: 20rpx;
+  background: #ebebeb;
+}
+
+
+/* 回复部分 */
+.reply{
+  width: 100%;
+  box-sizing: border-box;
+}
+.reply-head{
+  width: 100%;
+  height: 150rpx;
+  border-bottom: 1rpx solid #eeeeee;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+.reply-head .img{
+  width: 87rpx;
+  height: 87rpx;
+  border-radius: 50%;
+}
+.reply-user{
+  display: flex;
+  align-items: center;
+}
+.reply-user-info{
+  padding-left:13rpx; 
+}
+.reply-user-name{
+  font-size: 26rpx;
+  color: #4d4d4d;
+  line-height: 42rpx;
+}
+.reply-user-remarks{
+  font-size: 24rpx;
+  color: #9a9a9a;
+  width: 400rpx;
+}
+.focusBtn{
+  width: 150rpx;
+  font-size: 26rpx;
+  padding: 10rpx 0;
+  color: #fff;
+  background: #df838e;
+}
+.focusBtn image{
+  width: 23rpx;
+  height: 23rpx;
+  padding-right: 10rpx;
+}
+
+
+.reply-content{
+  width: 100%;
+  height: 660rpx;
+  border-bottom: 1rpx solid #eeeeee;
+  padding: 40rpx 30rpx;
+  box-sizing: border-box;
+  font-size: 28rpx;
+  line-height: 42rpx;
+  color: #696464;
+}
+
+.reply-footer{
+  width: 100%;
+  height: 117rpx;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; 
+}
+
+.agree{
+  padding: 10rpx 20rpx;
+  background: #f7f7f7;
+  font-size: 28rpx;
+  color: #989898;
+}
+.agree image{
+  width: 30rpx;
+  height: 29rpx;
+  padding-right: 10rpx;
+}
+.noAgree{
+  padding: 16rpx 30rpx;
+  background: #f7f7f7;
+  margin-left: -80rpx;
+}
+.noAgree image{
+  width: 30rpx;
+  height: 29rpx;
+}
+.star{
+  font-size: 20rpx;
+  color: #989898;
+  text-align: center;
+   margin-right: -75rpx; 
+}
+.star image{
+  width: 35rpx;
+  height: 33rpx;
+}
+
+.comment{
+  font-size: 20rpx;
+  color: #989898;
+  text-align: center;
+}
+.comment image{
+  width: 36rpx;
+  height: 27rpx;
+}

@@ -27,7 +27,14 @@
 		},
 		"miniprogram": {
 			"current": -1,
-			"list": []
+			"list": [
+				{
+					"id": 0,
+					"name": "demo",
+					"pathName": "pages/my/fans/myFans",
+					"query": ""
+				}
+			]
 		}
 	}
 }

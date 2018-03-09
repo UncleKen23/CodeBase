@@ -42,3 +42,21 @@
   width: 33rpx;
   height: 8rpx;
 }
+
+
+
+
+/* 好友身份 */
+.friends{
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+  color: #b9b9b9;
+  padding: 5rpx 0 10rpx;
+}
+.friends image{
+  width: 44rpx;
+  height: 44rpx;
+  border-radius: 50%;
+  padding-right: 10rpx;
+}

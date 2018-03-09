@@ -1,5 +1,10 @@
 <template name="question">
   <view class='question-box'>
+    <!-- 好友列表 -->
+    <view class='friends' wx:if="{{true}}">     
+      <image src='https://img01.vmei.com/201704/3CDF84C736514441A2A0BF51A5FA7DB6.png'></image>
+      <text>脑残粉回答了问题</text>
+    </view>
     <view class='question-title'>请问18岁该用什么样的护肤品，之前都是用婴儿 面霜，脸颊上有红血丝，中性皮肤?</view>
     <view class='question-answer'>有红血丝的话是因为角质层比较薄，所以你 用护肤品的时候就应该选个温和不伤肤的那种， 特别是洗面奶</view>
     <view class='flex-justify-between' style='margin-top:20rpx;'>

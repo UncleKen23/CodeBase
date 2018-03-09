@@ -4,8 +4,10 @@
     "pages/dynamic/dynamic",
     "pages/my/my",
     "pages/beauty/search/search",
-    "pages/logs/logs"
-    
+    "pages/logs/logs",
+    "pages/beauty/baseContent/quesetionDetail",
+    "pages/my/fans/myFans",
+    "pages/my/fans/herFans"
   ],
   "window": {
     "backgroundTextStyle": "light",

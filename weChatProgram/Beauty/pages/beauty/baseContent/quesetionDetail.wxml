@@ -1,0 +1,68 @@
+<!--pages/beauty/baseContent/quesetionDetail.wxml-->
+<view class='question'>
+  请问18岁该用什么样的护肤品，之前都是用婴儿 面霜，脸颊上有红血丝，中性皮肤?
+</view>
+<view class='answer flex-justify-between'>
+  <view class='btn ansBtn'>
+    <image src='../../images/answer/pen.png'></image>
+    <text>写回答</text>
+  </view>
+  <view class='checkAll'>
+    <text>查看全部 2 个回答</text>
+    <image src='../../images/answer/arrow.png'></image>
+  </view>
+</view>
+
+<view class='every'></view>
+
+<view class='reply'>
+  <view class='reply-head flex-justify-between'>
+    <view class='reply-user'>
+      <image src='https://img01.vmei.com/201704/3CDF84C736514441A2A0BF51A5FA7DB6.png' class='img'></image>
+      <view class='reply-user-info'>
+        <view class='reply-user-name'>Richsm</view>
+        <view class='reply-user-remarks one-row-hide'>路过路过!</view>
+      </view>
+    </view>
+    <view class='btn focusBtn' catchtap='clickFocus'>
+      <image src='../../images/answer/focus.png'></image>
+      <text wx:if="{{!isFocus}}">关注</text>
+      <text wx:else>已关注</text>
+    </view>
+  </view>
+
+  <scroll-view class='reply-content' scroll-y="true">
+    有红血丝的话是因为角质层比较薄，所以你用护肤品的 时候就应该选个温和不伤肤的那种，特别是洗面奶
+  </scroll-view>
+
+  <view class='reply-footer'>
+    <view class='btn agree' catchtap='clickPraise'>
+      <block wx:if="{{!isPraise}}">
+        <image src='../../images/answer/good.png'></image>
+        <text>赞同 24</text>
+      </block>
+      <block wx:else>
+        <image src='../../images/answer/good-active.png'></image>
+        <text style='color:#df838e;'>已赞同 25</text>
+      </block>
+    </view>
+    <view class='btn noAgree' catchtap='clickDerogatory'>
+      <image wx:if="{{!isDerogatory}}" src='../../images/answer/bad.png'></image>
+      <image wx:else src='../../images/answer/bad-active.png'></image>
+    </view>
+    <view class='star' catchtap='clickSave'>
+      <block wx:if="{{!isSave}}">
+        <image src='../../images/answer/star.png'></image>
+        <view>收藏</view>
+      </block>
+      <block wx:else>
+        <image src='../../images/answer/star-active.png'></image>
+        <view style='color:#df838e;'>已收藏</view>
+      </block>
+    </view>
+    <view class='comment'>
+      <image src='../../images/answer/commet.png'></image>
+      <view>21</view>
+    </view>
+  </view>
+</view>

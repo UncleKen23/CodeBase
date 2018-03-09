@@ -1,2 +1,4 @@
 <!--pages/dynamic/dynamic.wxml-->
-<text>pages/dynamic/dynamic.wxml</text>
+<import src='../template/question.wxml' />
+
+<template is="question" />

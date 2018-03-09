@@ -1,2 +1,46 @@
 <!--pages/my/my.wxml-->
-<text>pages/my/my.wxml</text>
+
+<view class='banner'>
+  <image class='bg' src='../images/beauty/banner.png'></image>
+  <view class='banner-content'>
+    <view class='left'>
+      <view class='user-image'>
+        <image src='https://img01.vmei.com/201704/3CDF84C736514441A2A0BF51A5FA7DB6.png'></image>
+        <image src='../images/attestation.png'></image>
+      </view>
+      <view class='user-name'>帅的不得了</view>
+      
+    </view>
+    <view class='right'>
+      <view class='focus'>
+        <view>1</view>
+        <view>关注</view>
+      </view>
+      <view class='every'></view>
+      <view class='fans'>
+        <view>1.2万</view>
+        <view>粉丝</view>
+      </view>
+    </view>
+  </view>
+  <view class='user-signature one-row-hide'>我是行走的表情包！！</view>
+</view>
+
+<view class='tool'>
+  <view class='tool-list'>
+    <image src='../images/my/answer.png' style='width:102rpx;height:95rpx;'></image>
+    <text>回答</text>
+  </view>
+  <view class='tool-list'>
+    <image src='../images/my/ask.png' style='width:85rpx;height:77rpx;'></image>
+    <text>提问</text>
+  </view>
+  <view class='tool-list'>
+    <image src='../images/my/star.png' style='width:73rpx;height:75rpx;'></image>
+    <text>收藏</text>
+  </view>
+  <view class='tool-list'>
+    <image src='../images/my/content.png' style='width:80rpx;height:75rpx;'></image>
+    <text>文章</text>
+  </view>
+</view>
