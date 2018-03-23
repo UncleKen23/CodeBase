@@ -16,12 +16,12 @@
     </view>
     <view class='name'>{{userInfo.nickName}}</view>
     <view class='fans'>
-      <view class='fans-li'>
-        <view>0</view>
+      <view class='fans-li' catchtap='toFocus'>
+        <view>1</view>
         <view>关注</view>
       </view>
       <view class='every'></view>
-      <view class='fans-li '>
+      <view class='fans-li' catchtap='showFans'>
         <view>1.2万</view>
         <view>粉丝</view>
       </view>
@@ -32,7 +32,4 @@
 
 
 <!-- 问题来了 -->
-<template is="question" />
-<template is="question" />
-<template is="question" />
-<template is="question" />
+<template is="question" data="" />

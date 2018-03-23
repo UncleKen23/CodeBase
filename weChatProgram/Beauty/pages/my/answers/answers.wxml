@@ -1,0 +1,10 @@
+<!--pages/my/answers/answers.wxml-->
+<import src='../../template/answer.wxml' />
+<view class='ul'>
+  <view class='li' catchtap='showAnswerDetail'>
+    <template is="answer" data="{{avatarUrl:userInfo.avatarUrl,nickName:userInfo.nickName}}" />
+  </view>
+   <view class='li' catchtap='showAnswerDetail'>
+    <template is="answer" data="{{avatarUrl:userInfo.avatarUrl,nickName:userInfo.nickName}}" />
+  </view>
+</view>

@@ -5,19 +5,19 @@
   <view class='banner-content'>
     <view class='left'>
       <view class='user-image'>
-        <image src='https://img01.vmei.com/201704/3CDF84C736514441A2A0BF51A5FA7DB6.png'></image>
+        <image src='{{userInfo.avatarUrl}}'></image>
         <image src='../images/attestation.png'></image>
       </view>
-      <view class='user-name'>帅的不得了</view>
+      <view class='user-name'>{{userInfo.nickName}}</view>
       
     </view>
     <view class='right'>
-      <view class='focus'>
+      <view class='focus' catchtap='toFocus'>
         <view>1</view>
         <view>关注</view>
       </view>
       <view class='every'></view>
-      <view class='fans'>
+      <view class='fans' catchtap='showFans'>
         <view>1.2万</view>
         <view>粉丝</view>
       </view>
@@ -27,7 +27,7 @@
 </view>
 
 <view class='tool'>
-  <view class='tool-list'>
+  <view class='tool-list' catchtap='toAnswer'>
     <image src='../images/my/answer.png' style='width:102rpx;height:95rpx;'></image>
     <text>回答</text>
   </view>
@@ -39,7 +39,7 @@
     <image src='../images/my/star.png' style='width:73rpx;height:75rpx;'></image>
     <text>收藏</text>
   </view>
-  <view class='tool-list'>
+  <view class='tool-list' catchtap='showArticle'>
     <image src='../images/my/content.png' style='width:80rpx;height:75rpx;'></image>
     <text>文章</text>
   </view>

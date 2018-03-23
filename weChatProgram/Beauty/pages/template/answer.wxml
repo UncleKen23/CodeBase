@@ -1,0 +1,23 @@
+<template name="answer">
+  <view class='li-head'>
+    <image src='{{avatarUrl}}'></image>
+    <view class='userName'>{{nickName}}</view>
+  </view>
+  <view class='li-body'>
+    <view class='productImages'>
+      <image src='/pages/images/answer/defaultImg.png'></image>
+      <image src='/pages/images/answer/defaultImg.png'></image>
+      <image src='/pages/images/answer/defaultImg.png'></image>
+    </view>
+    <view class='answer'>
+      你可以试试我用过的这个，最近种草的。用这个洗脸 洗的特别干净，洗完脸滑滑的，刷子软软的洗脸特别 舒服 就算那种特别严重的痘痘肌
+    </view>
+  </view>
+  <view class='li-footer'>
+    <image src='/pages/images/answer/good.png'></image>
+    <text>12 赞同</text>
+    <text style='padding:0 10rpx;'>·</text>
+    <image src='/pages/images/answer/commet.png'></image>
+    <text>4 评论</text>
+  </view>
+</template>

@@ -1,0 +1,10 @@
+<!--pages/my/article/articleList.wxml-->
+<view class='ul'>
+  <view class='li'>
+    <view class='article-title'>hello world</view>
+    <view class='article-info'>你可以试试我用过的这个，最近种草的。用这个洗脸 洗的特别干净，洗完脸滑滑的，刷子软软的洗脸特别 舒服 就算那种特别严重的痘痘肌</view>
+    <view class='read'>+ 阅读</view>
+  </view>
+</view>
+
+<view class='btn' catchtap='goEdit'>Edit it!</view>

@@ -90,5 +90,17 @@ Page({
     this.setData({
       isFocus : !this.data.isFocus
     })
+  },
+  // 去回答
+  toAnswer:function(){
+    wx.navigateTo({
+      url: '/pages/beauty/baseContent/writerAnswer',
+    })
+  },
+  //全部回答
+  showAnswers:function(){
+    wx.navigateTo({
+      url: '/pages/beauty/baseContent/allAnswer'
+    })
   }
 })

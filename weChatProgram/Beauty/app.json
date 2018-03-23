@@ -7,7 +7,15 @@
     "pages/logs/logs",
     "pages/beauty/baseContent/quesetionDetail",
     "pages/my/fans/myFans",
-    "pages/my/fans/herFans"
+    "pages/my/fans/herFans",
+    "pages/my/article/editeArticle",
+    "pages/my/article/articleList",
+    "pages/my/answers/answers",
+    "pages/my/focus/myFocus",
+    "pages/my/answers/answerDetail",
+    "pages/beauty/baseContent/writerAnswer",
+    "pages/beauty/baseContent/allAnswer",
+    "pages/my/article/articleDetail"
   ],
   "window": {
     "backgroundTextStyle": "light",

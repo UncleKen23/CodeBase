@@ -26,12 +26,18 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
+			"current": 0,
 			"list": [
 				{
 					"id": 0,
 					"name": "demo",
-					"pathName": "pages/my/fans/myFans",
+					"pathName": "pages/my/article/articleDetail",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "test",
+					"pathName": "pages/my/answers/answers",
 					"query": ""
 				}
 			]

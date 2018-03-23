@@ -1,0 +1,32 @@
+/* pages/beauty/baseContent/writerAnswer.wxss */
+page{
+  background: #f4fcf8;
+}
+.body{
+  width: 100%;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+textarea{
+  width: 100%;
+  min-height: 700rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+  border-top: 1rpx solid #eee;
+  background: #fff;
+  box-shadow: 0 5rpx 20rpx #eee;
+  /* margin-bottom:  */
+}
+.placeHolderClass{
+  font-size: 36rpx;
+  color: #999;
+}
+.submit{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  background: #96ddbb;
+  border-radius: 0;
+}

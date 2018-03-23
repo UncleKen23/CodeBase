@@ -1,0 +1,48 @@
+.li-head{
+  display: flex;
+  align-items: center;
+}
+.li-head image{
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+.li-head .userName{
+  font-size: 34rpx;
+  color: #999;
+}
+.li-body{width: 100%;margin-top: 10rpx;}
+
+.productImages{
+  width: 100%;
+  height: 150rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.productImages image{
+  height: 144rpx;
+  padding: 10rpx;
+  flex: 1;
+}
+.answer{
+  font-size: 32rpx;
+  line-height: 50rpx;
+  color: #111;
+  padding: 10rpx 0;
+}
+
+.li-footer{
+  width: 100%;
+  height: 50rpx;
+  display: flex;
+  align-items: center;
+  font-size: 26rpx;
+  color: #999;
+}
+.li-footer image{
+  width: 40rpx;
+  height: 30rpx;
+  padding-right: 10rpx;
+}

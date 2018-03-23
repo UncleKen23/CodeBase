@@ -68,7 +68,22 @@ Page({
   },
   showSearch:function(){
     wx.navigateTo({
-      url: 'search/search',
+      url: './search/search',
+    })
+  },
+  showDetails:function(){
+    wx.navigateTo({
+      url: './baseContent/quesetionDetail',
+    })
+  },
+  showFans: function () {
+    wx.navigateTo({
+      url: '/pages/my/fans/myFans',
+    })
+  },
+  toFocus:function(){
+    wx.navigateTo({
+      url: '/pages/my/focus/myFocus'
     })
   }
 })

@@ -1,4 +1,4 @@
-// pages/my/my.js
+// pages/my/answers/answers.js
 Page({
 
   /**
@@ -66,24 +66,9 @@ Page({
   onShareAppMessage: function () {
   
   },
-  showArticle:function(){
+  showAnswerDetail:function(){
     wx.navigateTo({
-      url: '/pages/my/article/articleList',
-    })
-  },
-  showFans:function(){
-    wx.navigateTo({
-      url: '/pages/my/fans/myFans',
-    })
-  },
-  toAnswer:function(){
-    wx.navigateTo({
-      url: '/pages/my/answers/answers',
-    })
-  },
-  toFocus:function(){
-    wx.navigateTo({
-      url: '/pages/my/focus/myFocus'
+      url: '/pages/my/answers/answerDetail'
     })
   }
 })

@@ -9,5 +9,6 @@ let SystemConfig = {
   audioIsNotReadKey: 'audioIsNotRead',
   loginSessionCodeKey: 'loginSessionCode',
   chatRecordPageSize: 20,
+  testHeadImg: 'https://img01.vmei.com/201704/3CDF84C736514441A2A0BF51A5FA7DB6.png'
 };
 export default SystemConfig;

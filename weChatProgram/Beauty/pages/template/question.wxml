@@ -1,5 +1,5 @@
 <template name="question">
-  <view class='question-box'>
+  <view class='question-box' catchtap='showDetails'>
     <!-- 好友列表 -->
     <view class='friends' wx:if="{{true}}">     
       <image src='https://img01.vmei.com/201704/3CDF84C736514441A2A0BF51A5FA7DB6.png'></image>

@@ -1,11 +1,11 @@
-// pages/my/my.js
+// pages/beauty/baseContent/writerAnswer.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    userInfo:{}
+  
   },
 
   /**
@@ -19,10 +19,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    let userInfo = wx.getStorageSync('userInfo')
-    this.setData({
-      userInfo: userInfo
-    })
+  
   },
 
   /**
@@ -65,25 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
   
-  },
-  showArticle:function(){
-    wx.navigateTo({
-      url: '/pages/my/article/articleList',
-    })
-  },
-  showFans:function(){
-    wx.navigateTo({
-      url: '/pages/my/fans/myFans',
-    })
-  },
-  toAnswer:function(){
-    wx.navigateTo({
-      url: '/pages/my/answers/answers',
-    })
-  },
-  toFocus:function(){
-    wx.navigateTo({
-      url: '/pages/my/focus/myFocus'
-    })
   }
 })

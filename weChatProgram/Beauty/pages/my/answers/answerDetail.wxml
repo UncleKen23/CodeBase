@@ -1,4 +1,4 @@
-<!--pages/beauty/baseContent/quesetionDetail.wxml-->
+<!--pages/my/answers/answerDetail.wxml-->
 <view class='question'>
   请问18岁该用什么样的护肤品，之前都是用婴儿 面霜，脸颊上有红血丝，中性皮肤?
 </view>
@@ -18,17 +18,17 @@
 <view class='reply'>
   <view class='reply-head flex-justify-between'>
     <view class='reply-user'>
-      <image src='https://img01.vmei.com/201704/3CDF84C736514441A2A0BF51A5FA7DB6.png' class='img'></image>
+      <image src='{{userInfo.avatarUrl}}' class='img'></image>
       <view class='reply-user-info'>
-        <view class='reply-user-name'>Richsm</view>
+        <view class='reply-user-name'>{{userInfo.nickName}}</view>
         <view class='reply-user-remarks one-row-hide'>路过路过!</view>
       </view>
     </view>
-    <view class='btn focusBtn' catchtap='clickFocus'>
+    <!-- <view class='btn focusBtn' catchtap='clickFocus'>
       <image src='../../images/answer/focus.png'></image>
       <text wx:if="{{!isFocus}}">关注</text>
       <text wx:else>已关注</text>
-    </view>
+    </view> -->
   </view>
 
   <scroll-view class='reply-content' scroll-y="true">

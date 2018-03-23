@@ -1,0 +1,41 @@
+/* pages/my/focus/myFocus.wxss */
+page{
+  background: #d5f1e4;
+}
+
+.fans-list{
+  width: 100%;
+  display: block;
+  padding-top: 20rpx;
+}
+.fans-li{
+  width: 100%;
+  height: 130rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-bottom: 1rpx solid #eeeeee;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+.fans-li:last-child{
+  border: 0;
+}
+.fans-info{
+  display: flex;
+  align-items: center;
+}
+.fans-info image{
+  width: 88rpx;
+  height: 88rpx;
+  border-radius: 50%;
+  padding-right:20rpx; 
+}
+
+.fans-focus{
+  font-size: 26rpx;
+  color: #df838e;
+  padding: 10rpx 20rpx;
+  border: 1rpx solid #df838e;
+}

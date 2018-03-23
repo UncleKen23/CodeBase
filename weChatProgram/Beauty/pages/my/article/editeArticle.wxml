@@ -1,0 +1,19 @@
+<!--pages/my/article/editeArticle.wxml-->
+<form report-submit='true'>
+  <view class='form'>
+    <view class='title'>
+      <input type='text' placeholder='添加标题' placeholder-style="color:#999;font-size:36rpx;"></input>
+    </view>
+    <view class='content'>
+      <textarea placeholder='添加正文' maxlength="300" placeholder-style="color:#999;font-size:36rpx;"></textarea>
+    </view>
+
+    <view class='uploadImg'>
+      <block wx:for="{{uploadImgs}}" wx:key="this">
+        <image src='{{item}}'></image>
+      </block>
+      <image src='/pages/images/my/add.png' catchtap='addImages' hidden='{{uploadImgs.length >= 6}}'></image>
+    </view>
+  </view>
+  <button class='submit'>发布</button>
+</form>

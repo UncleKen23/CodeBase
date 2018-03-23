@@ -1,0 +1,12 @@
+<!--pages/my/focus/myFocus.wxml-->
+<view class='fans-list'>
+  <view class='fans-li'>
+    <view class='fans-info'>
+      <image src='https://img01.vmei.com/201704/3CDF84C736514441A2A0BF51A5FA7DB6.png'></image>
+      <text>buges</text>
+    </view>
+    <view class='fans-focus' wx:if="{{!isFocus}}" catchtap='clickFocus'>关注</view>
+    <view class='fans-focus' wx:else catchtap='clickFocus'>已关注</view>
+  </view>
+  
+</view>

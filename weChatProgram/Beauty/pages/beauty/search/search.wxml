@@ -1,7 +1,7 @@
 <!--pages/beauty/search/search.wxml-->
 <import src='../../template/question.wxml' />
 
-<view class='search' bindtap='showSearch'>
+<view class='search'>
   <view class='search-input'>
     <icon size='14' type='search'></icon>
     <input type='text' placeholder='想要问什么问题' focus="true" value='{{content}}' bindinput="saveContent" bindconfirm='searchContent'></input>

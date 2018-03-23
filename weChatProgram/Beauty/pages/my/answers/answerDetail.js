@@ -1,10 +1,14 @@
-// pages/my/my.js
+// pages/my/answers/answerDetail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    isPraise: false,     //是否点赞
+    isDerogatory: false,   //是否点贬
+    isSave: false, //是否收藏
+    isFocus: false, //是否关注
     userInfo:{}
   },
 
@@ -12,7 +16,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    
   },
 
   /**
@@ -66,24 +70,40 @@ Page({
   onShareAppMessage: function () {
   
   },
-  showArticle:function(){
-    wx.navigateTo({
-      url: '/pages/my/article/articleList',
+  //点赞
+  clickPraise: function () {
+    this.setData({
+      isPraise: true
     })
   },
-  showFans:function(){
-    wx.navigateTo({
-      url: '/pages/my/fans/myFans',
+  //贬
+  clickDerogatory: function () {
+    this.setData({
+      isDerogatory: true
     })
   },
-  toAnswer:function(){
-    wx.navigateTo({
-      url: '/pages/my/answers/answers',
+  //收藏
+  clickSave: function () {
+    this.setData({
+      isSave: !this.data.isSave
     })
   },
-  toFocus:function(){
+  //关注
+  clickFocus: function () {
+    this.setData({
+      isFocus: !this.data.isFocus
+    })
+  },
+  // 去回答
+  toAnswer: function () {
     wx.navigateTo({
-      url: '/pages/my/focus/myFocus'
+      url: '/pages/beauty/baseContent/writerAnswer',
+    })
+  },
+  //全部回答
+  showAnswers: function () {
+    wx.navigateTo({
+      url: '/pages/beauty/baseContent/allAnswer'
     })
   }
 })
