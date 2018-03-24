@@ -33,3 +33,7 @@
 
 <!-- 问题来了 -->
 <template is="question" data="" />
+
+<template is="question" data="" />
+
+<template is="question" data="" />

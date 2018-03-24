@@ -31,11 +31,11 @@
     <image src='../images/my/answer.png' style='width:102rpx;height:95rpx;'></image>
     <text>回答</text>
   </view>
-  <view class='tool-list'>
+  <view class='tool-list' catchtap='toQuestion'>
     <image src='../images/my/ask.png' style='width:85rpx;height:77rpx;'></image>
     <text>提问</text>
   </view>
-  <view class='tool-list'>
+  <view class='tool-list' catchtap='toCollection'>
     <image src='../images/my/star.png' style='width:73rpx;height:75rpx;'></image>
     <text>收藏</text>
   </view>

@@ -1,2 +1,19 @@
 <!--pages/my/article/articleDetail.wxml-->
-<text>pages/my/article/articleDetail.wxml</text>
+<view class='bg'>
+  <image src="/pages/images/beauty/bg.jpg"></image>
+</view>
+
+<view class='article'>
+  <view class='title'>你好，世界</view>
+  <view class='content'>一个人如果喜欢一件事， 请记得， 要踏实，要努力，还要乐观。 我们有太多的无奈， 即使努力， 即使乐观。 可是，我们终究要记得一件事 陪伴自己到最后的永远只有自己。 所以， 喜欢了，就努力吧。 不停往前走， 不停地往前走。 我祝福每一个仍在梦想道路上挣扎的人， 祝你们，好运。
+  </view>
+
+  <view class='image-group'>
+    <image src='/pages/images/beauty/img01.png' mode='widthFix'></image>
+    <image src='/pages/images/beauty/img02.png' mode='widthFix'></image>
+    <image src='/pages/images/beauty/img03.png' mode='widthFix'></image>
+    <image src='/pages/images/beauty/img04.png' mode='widthFix'></image>
+    <image src='/pages/images/beauty/img05.png' mode='widthFix'></image>
+    <image src='/pages/images/beauty/img06.png' mode='widthFix'></image>
+  </view>
+</view>

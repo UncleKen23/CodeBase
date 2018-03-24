@@ -1,7 +1,7 @@
 <!--pages/beauty/baseContent/writerAnswer.wxml-->
 <view class='body'>
   <form report-submit='true'>
-    <textarea placeholder='添加正文' maxlength='350' placeholder-class='placeHolderClass'></textarea>
+    <textarea placeholder='我要回答' maxlength='350' placeholder-class='placeHolderClass'></textarea>
 
     <button class='submit'>发布</button>
   </form>

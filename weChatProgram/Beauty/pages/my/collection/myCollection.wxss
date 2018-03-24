@@ -1,0 +1,49 @@
+/* pages/my/collection/myCollection.wxss */
+@import "/pages/template/answer.wxss";
+page{
+  background: #d5f1e4;
+}
+
+.ul{
+  width: 100%;
+  padding: 10rpx 0;
+}
+.li{
+  width: 100%;
+  padding: 20rpx;
+  box-sizing: border-box;
+  background: #fff;
+  margin-bottom: 20rpx;
+  position: relative;
+}
+.li:last-child{
+  margin-bottom: 0;
+}
+.read{
+  position: absolute;
+  top: 30rpx;
+  right: 30rpx;
+  padding: 10rpx 20rpx;
+  font-size: 32rpx;
+  color: #d5f1e4;
+  border: 1rpx solid #d5f1e4;
+}
+.content{
+  box-sizing: border-box;
+  position: relative;
+}
+.article-title{
+  height: 90rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid #eee;
+  font-size: 42rpx;
+  color: #111;
+  font-weight: bold;
+  padding-left: 20rpx;
+}
+.article-info{
+  padding: 20rpx;
+  font-size: 34rpx;
+  color: #999;
+}

@@ -85,5 +85,15 @@ Page({
     wx.navigateTo({
       url: '/pages/my/focus/myFocus'
     })
+  },
+  toQuestion:function(){
+    wx.navigateTo({
+      url: '/pages/my/question/questionList',
+    })
+  },
+  toCollection:function(){
+    wx.navigateTo({
+      url: '/pages/my/collection/myCollection',
+    })
   }
 })

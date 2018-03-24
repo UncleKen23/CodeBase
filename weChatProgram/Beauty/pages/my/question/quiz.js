@@ -1,4 +1,4 @@
-// pages/my/article/articleList.js
+// pages/my/question/quiz.js
 Page({
 
   /**
@@ -62,15 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
   
-  },
-  goEdit:function(){
-    wx.navigateTo({
-      url: '/pages/my/article/editeArticle',
-    })
-  },
-  showArticleDetail:function(){
-    wx.navigateTo({
-      url: '/pages/my/article/articleDetail',
-    })
   }
 })

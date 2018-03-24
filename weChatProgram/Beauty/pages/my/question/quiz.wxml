@@ -1,0 +1,9 @@
+<!--pages/my/question/quiz.wxml-->
+<view class='body'>
+  <form report-submit='true'>
+    <textarea placeholder='我要提问' maxlength='350' placeholder-class='placeHolderClass'></textarea>
+
+    <button class='submit'>发布</button>
+  </form>
+
+</view>

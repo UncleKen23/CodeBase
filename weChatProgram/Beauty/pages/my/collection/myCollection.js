@@ -1,4 +1,4 @@
-// pages/my/article/articleList.js
+// pages/my/collection/myCollection.js
 Page({
 
   /**
@@ -19,7 +19,10 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+    let userInfo = wx.getStorageSync('userInfo')
+    this.setData({
+      userInfo: userInfo
+    })
   },
 
   /**
@@ -63,14 +66,15 @@ Page({
   onShareAppMessage: function () {
   
   },
-  goEdit:function(){
+  showAnswerDetail: function () {
     wx.navigateTo({
-      url: '/pages/my/article/editeArticle',
+      url: '/pages/my/answers/answerDetail'
     })
   },
-  showArticleDetail:function(){
+  showArticleDetail: function () {
     wx.navigateTo({
       url: '/pages/my/article/articleDetail',
     })
   }
+  
 })

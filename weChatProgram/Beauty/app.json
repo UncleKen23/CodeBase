@@ -15,7 +15,10 @@
     "pages/my/answers/answerDetail",
     "pages/beauty/baseContent/writerAnswer",
     "pages/beauty/baseContent/allAnswer",
-    "pages/my/article/articleDetail"
+    "pages/my/article/articleDetail",
+    "pages/my/question/questionList",
+    "pages/my/question/quiz",
+    "pages/my/collection/myCollection"
   ],
   "window": {
     "backgroundTextStyle": "light",

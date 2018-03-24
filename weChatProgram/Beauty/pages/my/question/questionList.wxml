@@ -1,0 +1,15 @@
+<!--pages/my/question/questionList.wxml-->
+<view class='ul'>
+  <view class='li'>
+    <view class='li-content'>
+      <image src='{{userInfo.avatarUrl}}'></image>
+      <view class='info'>
+        <view class='userName'>{{userInfo.nickName}}</view>
+        <view class='question'>卸妆油的主要成分是哪些？？？</view>
+      </view>
+    </view>
+    <view class='li-footer'>1小时前</view>
+  </view>
+</view> 
+
+<button class='submit' catchtap='showQuiz'>我要提问</button>

@@ -1,11 +1,11 @@
-// pages/my/article/articleList.js
+// pages/my/question/questionList.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    userInfo:{}
   },
 
   /**
@@ -19,7 +19,10 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+    let userInfo = wx.getStorageSync('userInfo')
+    this.setData({
+      userInfo: userInfo
+    })
   },
 
   /**
@@ -63,14 +66,9 @@ Page({
   onShareAppMessage: function () {
   
   },
-  goEdit:function(){
+  showQuiz:function(){
     wx.navigateTo({
-      url: '/pages/my/article/editeArticle',
-    })
-  },
-  showArticleDetail:function(){
-    wx.navigateTo({
-      url: '/pages/my/article/articleDetail',
+      url: '/pages/my/question/quiz',
     })
   }
 })

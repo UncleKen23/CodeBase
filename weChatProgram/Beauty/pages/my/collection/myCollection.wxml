@@ -1,10 +1,13 @@
-<!--pages/my/article/articleList.wxml-->
+<!--pages/my/collection/myCollection.wxml-->
+
+<import src='../../template/answer.wxml' />
 <view class='ul'>
-  <view class='li'>
+  <view class='li' catchtap='showAnswerDetail'>
+    <template is="answer" data="{{avatarUrl:userInfo.avatarUrl,nickName:userInfo.nickName}}" />
+  </view>
+   <view class='li content'>
     <view class='article-title'>你好，世界</view>
     <view class='article-info'>一个人如果喜欢一件事， 请记得， 要踏实，要努力，还要乐观。 我们有太多的无奈， 即使努力， 即使乐观。 可是，我们终究要记得一件事 陪伴自己到最后的永远只有自己。</view>
     <view class='read' catchtap='showArticleDetail'>+ 阅读</view>
   </view>
 </view>
-
-<view class='btn' catchtap='goEdit'>Edit it!</view>
