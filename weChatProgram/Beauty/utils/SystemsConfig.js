@@ -1,5 +1,6 @@
 
 let SystemConfig = {
+  serverUrl: 'https://linshubin.top/beauty/public/index.php/api/v1',
   serverSessionKey: 'chatSessionKey',       //从服务器返回的一个key，保持登录态，用来跟后台连接
   userInfoKey: 'userInfo',
   shareUserInfoKey: 'shareUserInfo',

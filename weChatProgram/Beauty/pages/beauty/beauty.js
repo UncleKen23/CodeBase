@@ -1,4 +1,6 @@
 // pages/beauty/beauty.js
+const SystemUtil = require('../../utils/SystemsUtil.js').default;
+
 Page({
 
   /**
@@ -12,9 +14,19 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-   
+    // this.getMainInfo();
   },
-
+  // getMainInfo:function(){
+  //   SystemUtil.commonGet({
+  //     url:'/user/get_personal_info',
+  //     success:(res)=>{
+  //       console.log(res)
+  //     },
+  //     fail:(err)=>{
+  //       console.log(err)
+  //     }
+  //   })
+  // },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

@@ -11,6 +11,23 @@ App({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
         console.log(res)
+        wx.request({
+          url: 'https://linshubin.top/beauty/public/index.php/api/v1/token/user',
+          data:{ code:res.code },
+          header: { 'content-type': 'application/x-www-form-urlencoded'},
+          method:'POST',
+          success:(res)=>{
+            // console.log(res.data.token)
+            wx.setStorageSync('chatSessionKey', res.data.token)
+          },
+          fail:(err)=>{
+            wx.showModal({
+              title: '提示',
+              content: result.msg || '自动登录异常',
+              showCancel: false
+            })
+          }
+        });
       }
     })
     // 获取用户信息
