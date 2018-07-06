@@ -5,6 +5,7 @@ App({
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
+    this.getUserInfo();
 
     // 登录
     wx.login({
@@ -55,7 +56,48 @@ App({
       // }
     })
   },
+  getUserInfo:function(cb,fun){
+    var that = this;
+    if(this.globalData.userInfo){
+      typeof cb == "function" && cb(this.globalData.userInfo)
+    }else{
+      wx.login({
+        success:function(loginRes){
+          wx.getUserInfo({
+            success:function(res){
+              console.log(res)
+              that.globalData.userInfo = res.userInfo;
+              typeof cb == "function" && cb(that.globalData.userInfo);
+              wx.request({
+                url: 'https://linshubin.top/beauty/public/index.php/api/v1/token/user',
+                data: { code: loginRes.code, encrytedData: res.encryptedData, iv: res.iv },
+                header: { 'content-type': 'application/x-www-form-urlencoded' },
+                method: 'POST',
+                success:function(re){
+                  //console.log(re)
+                  var unionId = that.globalData.unionId = re.data.unionId;
+                  wx.setStorageSync('openId', re.data.openId);
+                  wx.setStorageSync('unionId', unionId)
+                  console.log(wx.getStorageSync('unionId'));
+                }
+              })
+            },
+            fail:function(err){
+              console.log(err);
+              // wx.redirectTo({
+              //   url: '',
+              // })
+            }
+          })
+        }
+      })
+    }
+  },
+  get_userInfo:function(cb){
+    
+  },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    unionld:null
   }
 })
